@@ -1,23 +1,9 @@
-# MTL-XF-022 — Reference data and mappings
+# MTL-XF-022 — Reference mappings
 
-## Purpose
+References support the approved [model and cohort](../README.md). Do not assume a mapping exists solely because entity names look similar.
 
-Maintain the code lists and crosswalks needed to implement this analytical grain:
+Required acquisition checks: Inspect workbook contents and notes to map authority code, table identifier, quarter/reference date, duties owed, duty-ended outcomes, temporary-accommodation households and family categories. Do not invent column or sheet names from the business labels.
 
-Maintain separate quarterly national/available-geography duty-flow facts and quarter-end LA temporary-accommodation stock facts; include table identifier, household category, duty and outcome dimensions. National trends do not create an LA historical panel.
+For each mapping record source/version, licence, key, definition, valid dates, uniqueness, relationship cardinality, unmatched coverage and responsible domain steward. Quantify every unmapped category/entity. Keep totals distinct from components and do not multiply fact rows through many-to-many crosswalks.
 
-Potential references are the publisher's geography/entity identifiers, category hierarchies, period definitions, units, status codes and revision markers. Include only references actually needed by the model. Register any separately downloaded official file as an additional source.
-
-## Required mapping evidence
-
-Each reference needs source/version, licence, valid-from/to dates, key uniqueness, allowed values, business meaning, owner and transformation use. For each crosswalk record source key, target key, relationship cardinality, rationale and treatment of unmapped or changed entities. Quantify 100% of unmatched keys; do not silently drop them or infer a mapping from similar names.
-
-Avoid multiplying facts when a reference is many-to-many. Keep parent totals distinct from child categories. Non-official analyst-created groupings must be labelled as project assumptions and sensitivity-tested where they affect the investigation shortlist.
-
-## Domain constraints
-
-- Stock, new placements and duty flows describe different things and must not be summed.
-- The core files do not automatically establish costs, length of stay or prevention effectiveness.
-- Outcome shares are administrative indicators, not causal estimates or same-cohort conversion rates.
-
-The domain specialist approves category meaning and comparability. The Data Engineer supplies uniqueness, join-cardinality and coverage checks before the reference enters the curated model.
+Analyst-created groupings and eligibility thresholds are labelled project assumptions. If they affect case selection, show their effect in [the scenario comparison](../../project/ACCEPTANCE_CRITERIA.md). Candidate raw field names or download references in the source register still require actual version validation.

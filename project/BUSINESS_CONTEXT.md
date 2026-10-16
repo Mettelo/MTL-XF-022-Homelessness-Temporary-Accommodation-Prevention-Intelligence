@@ -1,58 +1,82 @@
 # MTL-XF-022 — Business context
 
-## Organisation and pressure
+## Organisation and decision owner
 
-**Statutory Homelessness, Temporary Accommodation & Prevention Performance Intelligence.** A council partnership is facing rising temporary-accommodation pressure but cannot clearly distinguish demand growth, weak prevention outcomes, relief-duty pressure and long stays. The project will support housing-service redesign and prevention planning.
+**Simulated client:** Confidential Council Housing & Homelessness Partnership. **Accountable executive:** Director of Housing & Homelessness. **Review cadence:** quarterly homelessness pathway and accommodation review.
 
-The simulated sponsor, Confidential Council Housing & Homelessness Partnership, must decide where to direct limited analytical and service-review attention. Its starting problem is an inconsistent view of statutory homelessness, temporary accommodation & prevention performance intelligence: totals, rates, periods and categories can lead users to different conclusions without a common definition. The engagement supplies an evidence base; it does not assume the client has already suffered a quantified failure.
+This fictional directorate/board is an engagement scenario, not an assertion of a real client's circumstances. The source data remains official public/open data.
 
-## Current process and its consequences
+## Business problem
 
-Analysts retrieve official tables independently, prepare local summaries and discuss headline differences in management meetings. Without a shared cohort and definition register, revisions, incomparable denominators and missing coverage can pass into recommendations. The consequence is an investigation shortlist that cannot be explained or reproduced, rather than a verified estimate of financial loss.
+Housing Options and temporary-accommodation managers approach the same review with different measures: duties arising during a quarter, duties ending with an outcome and households accommodated at quarter end. Leadership cannot allocate investigation effort consistently when those measures are mixed or treated as a single pipeline of unique households. Local housing supply and case duration may matter, but their contribution cannot be established from headline counts alone.
 
-## Required decision process
+## Why the current process is insufficient
 
-1. Confirm the reporting cohort and available dimensions.
-2. Review governed metrics and quality exceptions before interpreting patterns.
-3. Compare like-for-like trends and segment evidence against the questions below.
-4. Challenge at least two prioritisation scenarios and document changes in shortlisted cases.
-5. Assign a responsible role, evidence-gathering action and review point to every proposed investigation.
+The current scenario relies on separately prepared reports without a common source/metric contract. The material failure to prevent is specific: Duty flows, ended-duty outcomes and quarter-end accommodation stocks have incompatible populations and reference dates.
 
-**Decision:** Where should the partnership investigate prevention practice, relief pathways or temporary-accommodation supply, given distinct measures of demand, outcomes and accommodation stock?
+This creates uncertainty over which cases need investigation and which comparisons should be rejected. No quantified loss, backlog, budget deficit or service failure is invented as a client fact.
 
-## Business questions and evidence
+## Stakeholders and decisions
 
-| Question | Expected evidence |
+| Simulated stakeholder | Decision / review responsibility |
 | --- | --- |
-| Is national pressure rising because approaches/assessments, prevention duties or relief duties increased? | Reconciled trend/segment table and diagnostic chart with period, grain, denominator and source references. |
-| Which authorities have high temporary-accommodation stock and family accommodation exposure in the agreed quarter? | Reconciled trend/segment table and diagnostic chart with period, grain, denominator and source references. |
-| How do prevention and relief outcomes differ when each uses its own relevant denominator? | Segment or coverage assessment stating which comparisons are supported. |
-| Where do missing or non-comparable returns prevent a fair peer comparison? | Sensitivity or scope audit showing what changes the interpretation. |
-| What cost, duration or casework evidence is still needed to diagnose local service pressure? | Investigation plan with missing evidence, owner and decision-review trigger. |
+| Director of Housing & Homelessness | Accountable for scope, investigation priorities, accepted limitations and final business sign-off. |
+| Head of Housing Options | Review prevention and relief outcome patterns and commission pathway investigation. |
+| Temporary Accommodation Manager | Review quarter-end stock and family accommodation exposure; request placement-level context. |
+| Housing Finance Business Partner | Identify cost evidence needed before any financial scenario. |
+| Homelessness Data Steward | Validate duty, outcome and stock table definitions and reporting completeness. |
 
-## Intended management use
+## Commissioned decision
+
+Where should the partnership investigate prevention practice, relief pathways or temporary-accommodation supply, given distinct measures of demand, outcomes and accommodation stock?
+
+## Practical management use case
+
+The Director reviews the England demand trend, then switches to the January–March 2026 authority comparison. One authority may have a large accommodation stock while another has a weaker secured-accommodation outcome share. The first triggers a placement/supply evidence request; the second triggers a prevention-pathway review. Neither is automatically labelled ineffective, expensive or slow without supporting casework evidence.
+
+## Current-to-target workflow
+
+1. **Before review:** analyst registers the approved files, coverage and definitions; steward checks the cohort and unresolved exceptions.
+2. **At review:** Director of Housing & Homelessness opens the overview, then inspects diagnostics and the underlying eligible population before considering a case.
+3. **Challenge:** the relevant stakeholder compares the alternative scenario and asks whether the signal survives missingness, comparability and denominator checks.
+4. **Action:** each accepted case records investigation type, responsible service role, missing evidence, next review and what finding would reverse the recommendation.
+5. **Follow-up:** the next quarterly homelessness pathway and accommodation review records evidence received and the decision, without claiming the analytical signal itself caused an improvement.
+
+## Required analytical response
 
 - Build a national demand/outcome trend and a separate LA January–March 2026 peer view; do not infer local historical changes.
 - Create an up-to-ten-authority investigation shortlist distinguishing prevention, relief and accommodation-stock signals.
 - Compare raw-stock and outcome-share prioritisation, stratify by authority type if defensible, and state where population or housing-market context is missing.
 
-The BI executive view starts with the commissioned question, reporting period and coverage. Users inspect a diagnostic view before reading the investigation shortlist. Every case records the signal, its magnitude, uncertainty, alternative explanations, evidence still needed and a next-step owner. The final briefing must explain at least one case where the evidence is insufficient for action.
+## Measurable project outcomes
 
-## Measures of project value
+1. Every LA card is visibly dated January–March 2026 and separates stock from quarterly flows.
+2. Every outcome percentage identifies both duty and duty-ended denominator.
+3. Each shortlisted case selects either pathway, placement/supply or data-quality investigation with the responsible service role.
 
-Success means a repeatable review with five supported findings, five reconciled dashboard measures, two compared decision scenarios, ten UAT scenarios and a reproducible handover. Teams may propose a future operational baseline and improvement target, but must label these as proposed measures rather than achieved benefits. No observed savings or service improvement can be claimed from this simulated engagement alone.
+## Proposed benefit monitoring
 
-## Interpretation and evidence limits
+At kickoff, record a baseline review process and propose measures for: time to regenerate the agreed evidence pack; proportion of agenda recommendations with a complete evidence chain; and proportion of accepted investigations with a role owner and next review. The target for recommendation traceability and ownership is 100%; regeneration time is measured during the independent rerun, with no fabricated pre-project baseline or claimed reduction. These are proposed management measures, not achieved service benefits.
+
+## Scope and evidence limits
+
+**Core:** England quarterly national trend plus a January–March 2026 LA diagnostic snapshot. Keep prevention duties, relief duties, duty-ending outcomes and quarter-end accommodation in separate facts. Use source-published household-normalised rates only if the workbook supplies their exact denominator; otherwise label comparisons as unadjusted.
+
+**Extensions:** LA longitudinal comparisons need additional official quarterly files. Costs, median stay, individual pathways and causal prevention effectiveness require additional evidence and are not core commitments. Published duration categories, if present, must not be converted into an invented mean stay.
 
 - Stock, new placements and duty flows describe different things and must not be summed.
 - The core files do not automatically establish costs, length of stay or prevention effectiveness.
 - Outcome shares are administrative indicators, not causal estimates or same-cohort conversion rates.
 
-## Dependencies and risks
+## Risks, mitigations and escalation
 
-- Source/schema validation may narrow the scope: record an explicit impact decision rather than inventing fields.
-- Data revisions may alter findings: preserve immutable source manifests and rerun comparisons.
-- Small, suppressed or non-comparable segments may distort ordering: apply eligibility rules and show excluded cases.
-- Local context or operational records may be missing: attach an evidence request to the relevant recommendation.
+- **Interpretation risk:** Duty flows, ended-duty outcomes and quarter-end accommodation stocks have incompatible populations and reference dates. The domain specialist reviews definitions and DT1–DT10 before sign-off.
+- **Source risk:** Publication and workbook listings verified; internal sheet/field mappings, outcome categories, licences and frozen file identity pending. The steward records unresolved items at G1; mandatory gaps block dependent outputs.
+- **Decision risk:** prioritisation assumptions may affect which cases appear. Show alternative scenarios, excluded cases and evidence that could change a recommendation.
+- **Delivery risk:** limited time or skills can leave undocumented manual steps. Assign a second-member rerun and retain contribution/review evidence throughout the eight weeks.
 
-The domain roles in [the brief](PROJECT_BRIEF.md) own interpretation; the simulated review panel owns decisions.
+## Evidence chain
+
+Stakeholder requirement → registered source and valid cohort → governed field/metric → tested transformation → reconciled finding → scenario reason code → investigation owner/evidence request → simulated UAT and sign-off.
+
+Every major recommendation must be traceable through this chain.

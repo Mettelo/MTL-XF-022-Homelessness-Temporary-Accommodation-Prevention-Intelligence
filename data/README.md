@@ -1,57 +1,44 @@
-# MTL-XF-022 — Data workspace
+# MTL-XF-022 — Data workspace and support gate
 
-## Required sources and cohort
+## Core contract
 
-MHCLG Statutory Homelessness — England time series + detailed LA Jan–Mar 2026. Historical releases are maintained over many years.
+England quarterly national trend plus a January–March 2026 LA diagnostic snapshot. Keep prevention duties, relief duties, duty-ending outcomes and quarter-end accommodation in separate facts. Use source-published household-normalised rates only if the workbook supplies their exact denominator; otherwise label comparisons as unadjusted.
 
-Use the agreed England time-series ODS and detailed LA January–March 2026 ODS. National trends use matching quarters available in the frozen time series; LA comparisons use January–March 2026 only. Earlier LA quarters are an extension requiring separately registered official files.
+## Optional work
 
-[Source register and exact URLs](SOURCE_REGISTER.md)
+LA longitudinal comparisons need additional official quarterly files. Costs, median stay, individual pathways and causal prevention effectiveness require additional evidence and are not core commitments. Published duration categories, if present, must not be converted into an invented mean stay.
 
-**Current state:** specification only. No raw datasets have been downloaded or uploaded in this build. Expected size, row count and history statements from the earlier agreement require verification against the actual files. Do not mark the cohort frozen until the manifest and metadata are complete.
+## Acquisition state
 
-## Controlled acquisition and preparation
+No raw data is uploaded by this update. Official documentation checks are recorded in [SOURCE_REGISTER.md](SOURCE_REGISTER.md). File payloads, full schemas, bytes/checksums and final reuse/freeze approvals remain pending where stated. Keep publication-level evidence distinct from acquired-file evidence.
 
-1. Read [SOURCE_REGISTER.md](SOURCE_REGISTER.md); use the exact agreed URLs and official publisher documentation.
-2. Validate that the response is the expected CSV/ODS/XLSX/ZIP rather than an error page. Inspect archive contents and sheet names where relevant.
-3. Record resolved URL, UTC retrieval, release, coverage, filename, bytes, SHA-256 and licence evidence. Log discrepancies before changing sources.
-4. Preserve original bytes in an approved immutable snapshot; later upload only where instructed and redistribution is permitted.
-5. Record source fields, types, valid values, suppression, units and publisher methodology in [metadata](metadata/README.md).
-6. Implement the analytical grain below, verify keys/cardinality and account for excluded/quarantined records.
-7. Reconcile at least five published measures and create curated outputs reproducibly in the team repository.
+## Required source-to-deliverable matrix
 
-## Analytical grain
+Before analysis, create a row per headline measure/required comparison:
+
+`requirement_id | deliverable_id | metric | core_or_extension | source_id | actual_field_or_sheet | valid_grain | coverage | unit_denominator | metadata_evidence | support_status | owner | decision`
+
+Allowed support statuses: documentation-supported; payload-verified; unsupported; optional-not-activated. “Documentation-supported” alone is insufficient for a completed data freeze. If a mandatory field is absent, block its output and resolve the source or approved scope; do not fabricate values or silently waive the requirement.
+
+## Controlled preparation
+
+1. Use registered exact URLs and inspect actual content type, archive members or sheets.
+2. Record version, resolved URL, separate retrieval timestamps, bytes, SHA-256 and licence evidence.
+3. Approve the actual cohort and scope matrix at G1.
+4. Preserve original bytes; transform into curated facts with documented types, keys, hierarchies and joins.
+5. Account for retained/excluded/quarantined rows and quantify all mapping gaps.
+6. Reconcile five source values and execute [DT1–DT10](../project/ACCEPTANCE_CRITERIA.md).
+
+## Model and measures
 
 Maintain separate quarterly national/available-geography duty-flow facts and quarter-end LA temporary-accommodation stock facts; include table identifier, household category, duty and outcome dimensions. National trends do not create an LA historical panel.
 
-## Required metric contract
+The core contract above controls conditional dimensions. Metric formulas have one authoritative home: [DELIVERABLES.md](../project/DELIVERABLES.md). Do not create another incompatible formula copy in the data README.
 
-| Metric | Required definition / calculation |
-| --- | --- |
-| Prevention duties owed | Published quarterly households owed a prevention duty. |
-| Relief duties owed | Published quarterly households owed a relief duty; do not add duties to infer unique households. |
-| Prevention accommodation outcome share | 100 × prevention duties ended with secured accommodation / relevant prevention duties ended, using the publisher's outcome categories. |
-| Relief accommodation outcome share | 100 × relief duties ended with secured accommodation / relevant relief duties ended. |
-| Temporary-accommodation stock | Households in temporary accommodation at the quarter-end reference date. |
-| Family accommodation share | 100 × stock households with dependent children / total temporary-accommodation households, where supported. |
-| National comparable-quarter change | 100 × (current count / same quarter previous year − 1); zero base produces unavailable. |
-| Reporting completeness | Valid authority returns / expected authorities for the selected table and quarter. |
+## Data areas
 
-## Mandatory quality risks
+- [Raw snapshots](raw/README.md): unmodified source bytes only when later authorised and permitted.
+- [Reference data](reference/README.md): category/entity/period mappings with version and cardinality.
+- [Metadata](metadata/README.md): manifest, dictionary, methodology, lineage and support/freeze decisions.
 
-- Stock, new placements and duty flows describe different things and must not be summed.
-- The core files do not automatically establish costs, length of stay or prevention effectiveness.
-- Outcome shares are administrative indicators, not causal estimates or same-cohort conversion rates.
-
-1. Reconcile five national/LA published totals without double-counting table subtotals.
-2. Test that quarter-end stock cannot be added to quarterly duty flows.
-3. Test zero and missing duty-ended denominators.
-4. Verify the LA page is labelled January–March 2026 and has no fabricated historical trend.
-
-## Folder ownership
-
-- [raw](raw/README.md): unmodified approved source snapshots; guidance only at present.
-- [reference](reference/README.md): governed code lists, hierarchies and crosswalks.
-- [metadata](metadata/README.md): source notices, schema, glossary, lineage and manifest evidence.
-
-Curated data, processing code, logs and test results belong in the team delivery repository. Preserve a reproducible boundary between source inputs and generated products. Do not add personal, confidential or paid-source data.
+**Specific control:** Duty flows, ended-duty outcomes and quarter-end accommodation stocks have incompatible populations and reference dates.
