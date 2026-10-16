@@ -6,15 +6,19 @@
 
 This fictional directorate/board is an engagement scenario, not an assertion of a real client's circumstances. The source data remains official public/open data.
 
+## Business setting and immediate planning need
+
+The simulated council partnership brings Housing Options, temporary accommodation and housing finance into one quarterly service review. Leadership must decide which operational questions to investigate before changing prevention activity, placement arrangements or accommodation supply.
+
 ## Business problem
 
-Housing Options and temporary-accommodation managers approach the same review with different measures: duties arising during a quarter, duties ending with an outcome and households accommodated at quarter end. Leadership cannot allocate investigation effort consistently when those measures are mixed or treated as a single pipeline of unique households. Local housing supply and case duration may matter, but their contribution cannot be established from headline counts alone.
+The Director of Housing & Homelessness needs a common view of pressure across prevention, relief and temporary accommodation. Housing Options reports duties and outcomes during the quarter, while the accommodation team reports households housed at quarter end. These describe different workloads, yet they arrive as competing explanations of the same service pressure.
+
+Without a clear distinction, the partnership cannot decide whether the next piece of work should examine prevention practice, relief pathways or placement supply. A large accommodation stock may justify a supply enquiry; a weaker secured-accommodation outcome share may justify a pathway review. Neither alone establishes poor casework, long stays or avoidable cost.
 
 ## Why the current process is insufficient
 
-The current scenario relies on separately prepared reports without a common source/metric contract. The material failure to prevent is specific: Duty flows, ended-duty outcomes and quarter-end accommodation stocks have incompatible populations and reference dates.
-
-This creates uncertainty over which cases need investigation and which comparisons should be rejected. No quantified loss, backlog, budget deficit or service failure is invented as a client fact.
+The review starts with several operational totals but no agreed route from each signal to a responsible service team. National changes can be mistaken for local trends, and a quarter-end stock can be discussed as though it were new quarterly placements. The replacement must retain an England trend for context and a separately dated LA snapshot for diagnostic comparison.
 
 ## Stakeholders and decisions
 
@@ -32,15 +36,15 @@ Where should the partnership investigate prevention practice, relief pathways or
 
 ## Practical management use case
 
-The Director reviews the England demand trend, then switches to the January–March 2026 authority comparison. One authority may have a large accommodation stock while another has a weaker secured-accommodation outcome share. The first triggers a placement/supply evidence request; the second triggers a prevention-pathway review. Neither is automatically labelled ineffective, expensive or slow without supporting casework evidence.
+The analyst opens the England quarterly overview, then the January–March 2026 LA snapshot. The Director compares an authority with a substantial accommodation stock against one with a weaker prevention or relief accommodation-outcome share. Housing Options checks the duty-ended denominator; the Accommodation Manager checks the stock definition and reporting completeness.
+
+The meeting creates separate pathway-review and placement/supply cases. A placement case requests local placement, household-composition and supply evidence; a pathway case requests case-stage and outcome evidence. Finance receives a defined cost-data request only when a financial question has been identified. The next quarterly review records whether each enquiry should proceed, close or change scope.
 
 ## Current-to-target workflow
 
-1. **Before review:** analyst registers the approved files, coverage and definitions; steward checks the cohort and unresolved exceptions.
-2. **At review:** Director of Housing & Homelessness opens the overview, then inspects diagnostics and the underlying eligible population before considering a case.
-3. **Challenge:** the relevant stakeholder compares the alternative scenario and asks whether the signal survives missingness, comparability and denominator checks.
-4. **Action:** each accepted case records investigation type, responsible service role, missing evidence, next review and what finding would reverse the recommendation.
-5. **Follow-up:** the next quarterly homelessness pathway and accommodation review records evidence received and the decision, without claiming the analytical signal itself caused an improvement.
+**Target management handover:** A quarterly homelessness decision pack with separate demand/outcome and accommodation-stock views, a dated LA diagnostic comparison, two investigation queues and service-specific evidence requests. Keep national trend conclusions distinct from the single-quarter local snapshot.
+
+The meeting's decision record must contain: the selected case and reporting period; the source-backed finding; the decision to investigate, watch, clarify or close; the responsible stakeholder role; the specific additional evidence requested; and the next review point. Add the evidence that would reverse or narrow the recommendation. A watchlist or no-action conclusion is valid when supported; do not fill the shortlist simply to reach ten cases.
 
 ## Required analytical response
 
@@ -56,7 +60,9 @@ The Director reviews the England demand trend, then switches to the January–Ma
 
 ## Proposed benefit monitoring
 
-At kickoff, record a baseline review process and propose measures for: time to regenerate the agreed evidence pack; proportion of agenda recommendations with a complete evidence chain; and proportion of accepted investigations with a role owner and next review. The target for recommendation traceability and ownership is 100%; regeneration time is measured during the independent rerun, with no fabricated pre-project baseline or claimed reduction. These are proposed management measures, not achieved service benefits.
+Measure the share of shortlisted cases assigned to the correct pathway or placement/supply queue with an accountable service role; target 100%. In simulated UAT, require the user to explain why a stock-pressure case and a weaker outcome-share case need different enquiries. Any reduction in placement cost or length of stay needs later local evidence.
+
+Record the preparation and review baseline at kickoff, then measure evidence-pack regeneration during the independent rerun. No pre-project time saving or achieved operational benefit is assumed. The eight-week engagement is assessed on the usability and traceability of the decision pack; later service outcomes require separate follow-up.
 
 ## Scope and evidence limits
 

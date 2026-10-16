@@ -10,9 +10,15 @@
 
 > This is a **simulated confidential-client engagement using official public/open data**. Client and stakeholder role labels describe a fictional engagement; do not claim a real external Mettelo customer, employment, endorsement or privileged data access. No raw data is uploaded by this specification update.
 
+## Business setting
+
+The simulated council partnership brings Housing Options, temporary accommodation and housing finance into one quarterly service review. Leadership must decide which operational questions to investigate before changing prevention activity, placement arrangements or accommodation supply.
+
 ## Business problem
 
-Housing Options and temporary-accommodation managers approach the same review with different measures: duties arising during a quarter, duties ending with an outcome and households accommodated at quarter end. Leadership cannot allocate investigation effort consistently when those measures are mixed or treated as a single pipeline of unique households. Local housing supply and case duration may matter, but their contribution cannot be established from headline counts alone.
+The Director of Housing & Homelessness needs a common view of pressure across prevention, relief and temporary accommodation. Housing Options reports duties and outcomes during the quarter, while the accommodation team reports households housed at quarter end. These describe different workloads, yet they arrive as competing explanations of the same service pressure.
+
+Without a clear distinction, the partnership cannot decide whether the next piece of work should examine prevention practice, relief pathways or placement supply. A large accommodation stock may justify a supply enquiry; a weaker secured-accommodation outcome share may justify a pathway review. Neither alone establishes poor casework, long stays or avoidable cost.
 
 ## Commissioned decision
 
@@ -20,9 +26,13 @@ Housing Options and temporary-accommodation managers approach the same review wi
 
 ## Practical use
 
-The Director reviews the England demand trend, then switches to the January–March 2026 authority comparison. One authority may have a large accommodation stock while another has a weaker secured-accommodation outcome share. The first triggers a placement/supply evidence request; the second triggers a prevention-pathway review. Neither is automatically labelled ineffective, expensive or slow without supporting casework evidence.
+The analyst opens the England quarterly overview, then the January–March 2026 LA snapshot. The Director compares an authority with a substantial accommodation stock against one with a weaker prevention or relief accommodation-outcome share. Housing Options checks the duty-ended denominator; the Accommodation Manager checks the stock definition and reporting completeness.
 
-The full [business context](project/BUSINESS_CONTEXT.md) names operational stakeholders, decisions, risks and proposed benefit measures.
+The meeting creates separate pathway-review and placement/supply cases. A placement case requests local placement, household-composition and supply evidence; a pathway case requests case-stage and outcome evidence. Finance receives a defined cost-data request only when a financial question has been identified. The next quarterly review records whether each enquiry should proceed, close or change scope.
+
+**Management handover:** A quarterly homelessness decision pack with separate demand/outcome and accommodation-stock views, a dated LA diagnostic comparison, two investigation queues and service-specific evidence requests. Keep national trend conclusions distinct from the single-quarter local snapshot.
+
+The full [business context](project/BUSINESS_CONTEXT.md) sets out stakeholders, decisions, evidence limits and proposed benefit measures.
 
 ## What must be delivered
 

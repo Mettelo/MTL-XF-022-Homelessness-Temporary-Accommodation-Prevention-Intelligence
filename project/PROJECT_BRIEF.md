@@ -6,9 +6,17 @@ This is a **simulated confidential-client engagement using official public/open 
 
 ## Business problem and commission
 
-Housing Options and temporary-accommodation managers approach the same review with different measures: duties arising during a quarter, duties ending with an outcome and households accommodated at quarter end. Leadership cannot allocate investigation effort consistently when those measures are mixed or treated as a single pipeline of unique households. Local housing supply and case duration may matter, but their contribution cannot be established from headline counts alone.
+The simulated council partnership brings Housing Options, temporary accommodation and housing finance into one quarterly service review. Leadership must decide which operational questions to investigate before changing prevention activity, placement arrangements or accommodation supply.
+
+The Director of Housing & Homelessness needs a common view of pressure across prevention, relief and temporary accommodation. Housing Options reports duties and outcomes during the quarter, while the accommodation team reports households housed at quarter end. These describe different workloads, yet they arrive as competing explanations of the same service pressure.
+
+Without a clear distinction, the partnership cannot decide whether the next piece of work should examine prevention practice, relief pathways or placement supply. A large accommodation stock may justify a supply enquiry; a weaker secured-accommodation outcome share may justify a pathway review. Neither alone establishes poor casework, long stays or avoidable cost.
 
 > Where should the partnership investigate prevention practice, relief pathways or temporary-accommodation supply, given distinct measures of demand, outcomes and accommodation stock?
+
+**Required management handover:** A quarterly homelessness decision pack with separate demand/outcome and accommodation-stock views, a dated LA diagnostic comparison, two investigation queues and service-specific evidence requests. Keep national trend conclusions distinct from the single-quarter local snapshot.
+
+See [the management use case](BUSINESS_CONTEXT.md#practical-management-use-case) for how the review meeting uses this evidence.
 
 ## Core deliverable boundary
 
